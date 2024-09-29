@@ -1,123 +1,70 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
     
-    float num1, num2, num3, num4, sonuc;
-    int islemimiz;
+    float number, result;
+    int count;
     
     printf(" ------------------------------------------\n");
     printf("|            ORTALAMA HESAPLAMA            |\n");
     printf("|                                          |\n");
     printf("|                                          |\n");
-    printf("| Kaç tane sayının ortalamasını alacaksan  |\n");
-    printf("| aşağıya yaz en az 2 en fazla 4 tane      |\n");
-    printf("| sayının ortalamasını alabilirsin.        |\n");
+    printf("| Kaç tane sayının ortalamasını almak      |\n");
+    printf("| istiyorsan aşağıya yazıp sayıların       |\n");
+    printf("| ortalamasını alabilirsin.                |\n");
     printf("|                                          |\n");
     printf("|> ");
-    scanf("%d", &islemimiz);
+    scanf("%d", &count);
     
+    float numbers[count];
     
-    if(islemimiz == 2) {
-        
+    system("clear");
+
+    for(int i = 0; i < count; i++) 
+    {
+    if(i == 0) 
+    {
     printf(" ------------------------------------------\n");
     printf("|            ORTALAMA HESAPLAMA            |\n");
     printf("|                                          |\n");
     printf("|                                          |\n");
-    printf("| Ortalamasını almak istediğiniz iki tane  |\n");
+    printf("| Ortalamasını almak istediğiniz %d tane   |\n", count);
     printf("| sayı yazınız.                            |\n");
     printf("|                                          |\n");
     printf("|                                          |\n");
     printf("|> ");
-    scanf("%f%f", &num1, &num2);    
-    
-    sonuc = ( num1 + num2 ) / 2;
-        
-    printf(" ------------------------------------------\n");
-    printf("|            ORTALAMA HESAPLAMA            |\n");
-    printf("|                                          |\n");
-    printf("|                                          |\n");
-    printf("| İşlem başarılı..                         |\n");
-    printf("|                                          |\n");
-    printf("| 1. Sayı = %.2f                          |\n", num1);
-    printf("| 2. Sayı = %.2f                          |\n", num2);
-    printf("| Ortalama = %.2f                         |\n", sonuc);
-    printf("|                                          |\n");
-    printf("|                                          |\n");
-    printf(" ------------------------------------------\n");
-    }; 
-    
-    if(islemimiz == 3) {
-        
-    printf(" ------------------------------------------\n");
-    printf("|            ORTALAMA HESAPLAMA            |\n");
-    printf("|                                          |\n");
-    printf("|                                          |\n");
-    printf("| Ortalamasını almak istediğiniz iki tane  |\n");
-    printf("| sayı yazınız.                            |\n");
-    printf("|                                          |\n");
-    printf("|                                          |\n");
+    scanf("%f", &number);
+    } else 
+    {
     printf("|> ");
-    scanf("%f%f%f", &num1, &num2, &num3);           
-        
-    sonuc = ( num1 + num2 + num3 ) / 2;
-        
-    printf(" ------------------------------------------\n");
-    printf("|            ORTALAMA HESAPLAMA            |\n");
-    printf("|                                          |\n");
-    printf("|                                          |\n");
-    printf("| İşlem başarılı..                         |\n");
-    printf("|                                          |\n");
-    printf("| 1. Sayı = %.2f                          |\n", num1);
-    printf("| 2. Sayı = %.2f                          |\n", num2);
-    printf("| 3. Sayı = %.2f                          |\n", num3);
-    printf("| Ortalama = %.2f                         |\n", sonuc);
-    printf("|                                          |\n");
-    printf("|                                          |\n");
-    printf(" ------------------------------------------\n");
-    }; 
-    
-    if(islemimiz == 4) {
-        
-    printf(" ------------------------------------------\n");
-    printf("|            ORTALAMA HESAPLAMA            |\n");
-    printf("|                                          |\n");
-    printf("|                                          |\n");
-    printf("| Ortalamasını almak istediğiniz iki tane  |\n");
-    printf("| sayı yazınız.                            |\n");
-    printf("|                                          |\n");
-    printf("|                                          |\n");
-    printf("|> ");
-    scanf("%f%f%f", &num1, &num2, &num3, &num4);           
-        
-    sonuc = ( num1 + num2 + num3 + num4 ) / 2;
-        
-    printf(" ------------------------------------------\n");
-    printf("|            ORTALAMA HESAPLAMA            |\n");
-    printf("|                                          |\n");
-    printf("|                                          |\n");
-    printf("| İşlem başarılı..                         |\n");
-    printf("|                                          |\n");
-    printf("| 1. Sayı = %.2f                          |\n", num1);
-    printf("| 2. Sayı = %.2f                          |\n", num2);
-    printf("| 3. Sayı = %.2f                          |\n", num3);
-    printf("| 4. Sayı = %.2f                          |\n", num4);
-    printf("| Ortalama = %.2f                         |\n", sonuc);
-    printf("|                                          |\n");
-    printf("|                                          |\n");
-    printf(" ------------------------------------------\n");
-    }; 
-    
-    if(islemimiz < 2) {
-        printf("Hata: En az 2 sayının ortalamasını alabilirsin.");
+    scanf("%f", &number);    
     }
     
-    if(islemimiz > 4) {
-        printf("Hata: En fazla 4 sayının ortalamasını alabilirsin.");
+    numbers[i] = number;
+    result += number;
     }
     
-    // Düzenlenip sınırı kolaylıkla arttırılabilecek ve geliştirilebilecek basit bir ortalama hesaplama aracı 
-    
-    
+    result = result / count;
+    system("clear");
+
+    printf(" ------------------------------------------\n");
+    printf("|            ORTALAMA HESAPLAMA            |\n");
+    printf("|                                          |\n");
+    printf("|                                          |\n");
+    printf("| İşlem başarılı..                         |\n");
+
+    for(int c = 0; c < count; c++) 
+    {
+    printf("| %d. Sayı = %.2f                          |\n", c+1, numbers[c]);
+    }
+
+    printf("|                                          |\n");
+    printf("| Ortalama = %.2f                         |\n", result);
+    printf("|                                          |\n");
+    printf("|                                          |\n");
+    printf(" ------------------------------------------\n");
+
     return 0;
 }
