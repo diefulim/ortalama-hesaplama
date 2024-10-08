@@ -7,3 +7,6 @@
 <h2>Bu Projenin Amacı Ne?</h2>
 
 ✨ Bu programı kullanarak istediğiniz kadar sayının hesaplamasını ondalıklı olarak alabilirsiniz, örneğin bir öğrencinin not ortalamasını hesaplayabilir veya bir iş sonucundaki kazancınızın ortalamasını alabilirsiniz.
+
+<h2>Ekran Görüntüleri</h2>
+<img src="">
