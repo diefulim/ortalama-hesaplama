@@ -10,5 +10,5 @@
 
 <h2>Ekran Görüntüleri</h2>
 <img src="https://github.com/user-attachments/assets/e0dfa3b1-85c1-4944-9f12-9688f88a2562"><br>
-<img src="https://github.com/user-attachments/assets/2155bb4c-aa16-44af-8ecf-d9773d077ee5">
+<img src="https://github.com/user-attachments/assets/2155bb4c-aa16-44af-8ecf-d9773d077ee5"><br>
 <img src="https://github.com/user-attachments/assets/0b7e1a54-2498-40cb-a0d3-bf96b5c5b816">
